@@ -30,7 +30,7 @@ abstract class Model
      * @return mixed
      */
     public function getOne(){
-        $sql = "SELECT * FROM ".$this->table." WHERE id=".$this->id;
+        $sql = "SELECT * FROM ".$this->table." WHERE idFilm=".$this->id;
         $query = $this->_connection->prepare($sql);
         $query->execute();
         return $query->fetch();

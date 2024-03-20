@@ -1,7 +1,6 @@
 <?php
 
 
-
 ?>
 
 <!doctype html>
@@ -14,6 +13,8 @@
     <title>Article</title>
 </head>
 <body>
-    <h1>TEST</h1>
+    <?php foreach($articles as $article) { ?>
+    <a href="Article/detail/<?= $article['idFilm'] ?>"><?= $article['titre'] ?></a> <!-- mcv/article/1 -->
+    <?php } ?>
 </body>
 </html>

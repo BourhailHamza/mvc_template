@@ -28,5 +28,8 @@ if($params[0] != "") {
         exit();
     }
 
-    $controller->$action();
+    unset($params[0]);
+    unset($params[1]);
+    
+    call_user_func_array([$controller, $action], $params);
 }

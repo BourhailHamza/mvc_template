@@ -3,7 +3,7 @@
 class ArticleModel extends Model
 {
     public function __construct() {
-        $this->table = 'artiste';
+        $this->table = 'film';
         $this->getConnection();
     }
 }
